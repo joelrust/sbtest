@@ -45,6 +45,11 @@ Pd.start()
       $('button#sample1Button').click(function() {
         Pd.send('gob', ['bang'])
       })
+  
+      $('button#sample1Button').click(function() {
+     Pd.startOnClick(button, function() {
+    console.log('clicked!')
+  
       $('button#sample2Button').click(function() {
         Pd.send('stopb', ['bang'])
       })
