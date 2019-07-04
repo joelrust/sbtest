@@ -27,9 +27,9 @@ Pd.start()
 
 
 <body>
-<button id="startButton">Start patch</button>
+<button id="startButton">Click to start</button>
 <script>
-  // Now, when user clicks on button, Pd will start and sound should work even on iOS.
+ 
   var button = document.getElementById('startButton')
   Pd.startOnClick(button, function() {
     console.log('clicked!')
@@ -38,8 +38,8 @@ Pd.start()
 
 
  <div id="controls">
-      <button id="sample1Button">Start</button>
-      <button id="sample2Button">Stop</button>
+      <button id="sample1Button">Start recording</button>
+      <button id="sample2Button">Stop recording</button>
  <script type="text/javascript">
       $('button#sample1Button').click(function() {
         Pd.send('gob', ['bang'])
