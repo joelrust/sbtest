@@ -27,7 +27,7 @@ Pd.start()
 
 
 <body>
-<button id="startButton">Click to Start</button>
+<button id="startButton">Click to start</button>
 <script>
  
   var button = document.getElementById('startButton')
@@ -43,10 +43,10 @@ Pd.start()
   (if nothing happens, reload the page and try again)
  <script type="text/javascript">
   
-     $('button#sample1Button').click(function() {
-     Pd.startOnClick(button, function() {
-    console.log('clicked!')
-      })
+ //    $('button#sample1Button').click(function() {
+   //  Pd.startOnClick(button, function() {
+  //  console.log('clicked!')
+   //   })
   
       $('button#sample1Button').click(function() {
         Pd.send('gob', ['bang'])
