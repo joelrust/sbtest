@@ -40,6 +40,7 @@ Pd.start()
  <div id="controls">
       <button id="sample1Button">Start recording</button>
       <button id="sample2Button">Stop recording</button>
+  (if nothing happens, reload the page and try again)
  <script type="text/javascript">
       $('button#sample1Button').click(function() {
         Pd.send('gob', ['bang'])
