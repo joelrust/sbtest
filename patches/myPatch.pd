@@ -77,13 +77,13 @@
 #X msg 628 33 1;
 #X obj 628 10 r jgo;
 #X obj 597 802 s jgo;
-#X obj 140 597 * -1;
+#X obj 159 575 * -1;
 #X obj 736 79 t f f;
 #X obj 716 120 / 7;
 #X obj 716 141 / 3.5;
 #X obj 693 53 * 3;
 #X obj 707 99 * 2.5;
-#X floatatom 211 595 5 0 0 0 - - -;
+#X floatatom 223 597 5 0 0 0 - - -;
 #X obj 100 618 clip~ -0.3 0.3;
 #X obj 123 646 clip~ -0.3 0.3;
 #X obj 233 532 r res;
