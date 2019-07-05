@@ -1,15 +1,13 @@
-
-<!doctype HTML>
-
+<!DOCTYPE html>
 <html>
-
 <head>
-
+   
+   
 <script src="js/jquery.js"></script>
 
 <script src="js/webpd-latest.js"></script>
 
-   <link rel="stylesheet" href="http://joelrust.com/inland.css">
+   <link rel="stylesheet" href="inland.css">
 
  
 <script>
@@ -20,12 +18,57 @@ Pd.start()
 })
 </script>
 
-</head>
+   
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta content="Joel Rust, Composer" name="description" />
+	<meta content="joel,rust,composer,music,about,bio,biography" name="keywords" />
+	<meta content="Joel Rust" name="author" />
+	<link href="http://fonts.googleapis.com/css?family=Josefin+Slab|Dosis" rel="stylesheet" type="text/css" />
+	<link href="inland.css" media="all" rel="stylesheet" type="text/css" /><script type="text/javascript" src="js/jquery-1.7.1.min.js"></script><script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+	<title>Joel Rust</title>
+	<script type="text/javascript">
 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35033422-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<div class="clearfix" id="wrapper760">
+<div class="clearfix" id="header">
+<div class="clearfix" id="sitetitle">
+<h1><a href="index.html">Joel Rust</a></h1>
+</div>
+
+<div class="clearfix" id="nav">
+<ul>
+	<li><a class="current" href="index.html">About</a></li>
+	<li><a href="performances.html">Events</a></li>
+	<li><a href="portfolio.html">Portfolio</a></li>
+	<li><a href="citizen.html">CITIZEN</a></li>
+	<li><a href="conifers.html" target="_blank">The Conifers</a></li>
+
+
+</ul>
+</div>
+</div>
+
+<div id="content">
+
+   
+   
+   
 
 
 <body>
-<button id="startButton">Click to start</button>
+<button id="startButton">Click to launch</button>
 <script>
  
   var button = document.getElementById('startButton')
@@ -37,7 +80,7 @@ Pd.start()
 
  <div id="controls">
       <button id="sample1Button">Start recording</button>
-      <button id="sample2Button">Stop recording</button>
+    <button id="sample2Button">Stop recording</button></br>
   (if nothing happens, reload the page and try again)
  <script type="text/javascript">
   
@@ -73,6 +116,14 @@ Pd.start()
    <p>For more information about my work, see <a href="http://www.joelrust.com" target="_blank">joelrust.com</a>.
 
 
-</body>
+<div id="footer">
 
+<p>&copy; 2019 Joel Rust - joelrust@gmail.com</p>
+</div>
+</div>
+<script type="text/javascript">
+	$(window).load(function() {
+		$('#slider').nivoSlider();
+	});
+</script></body>
 </html>
