@@ -7,9 +7,6 @@
 <script src="js/jquery.js"></script>
 
 <script src="js/webpd-latest.js"></script>
-
-   <link rel="stylesheet" href="http://joelrust.com/inland.css">
-
  
 <script>
 var patch
@@ -22,7 +19,9 @@ Pd.start()
 </head>
 
 <body>
-<button id="startButton">Click to start</button>
+<button id="startButton">Click to launch</button>
+   <p style="font-size:13px; color:#000022; font-family:arial;">Speak, sing, play, whisper, ululate, whistle, or sound in some other way (for up to ten seconds):</p>
+
 <script>
  
   var button = document.getElementById('startButton')
@@ -35,7 +34,7 @@ Pd.start()
  <div id="controls">
       <button id="sample1Button">Start recording</button>
       <button id="sample2Button">Stop recording</button>
-  (if nothing happens, reload the page and try again)
+<p style="font-size:13px; color:#000022; font-family:arial;">(if nothing happens, reload the page and try again)</p>
  <script type="text/javascript">
     $('button#sample1Button').click(function() {
         Pd.send('gob', ['bang'])
