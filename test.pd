@@ -1,4 +1,4 @@
-#N canvas 1746 233 723 651 12;
+#N canvas 1099 233 1370 651 12;
 #N canvas 357 168 872 627 all 0;
 #X obj 235 32 loadbang;
 #X obj 350 194 t b b;
@@ -11,7 +11,7 @@
 #X floatatom 342 436 5 0 0 0 - - -;
 #X obj 287 206 del 99;
 #X obj 290 256 metro 99;
-#X obj 272 234 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 272 234 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 213 297 f;
 #X obj 233 327 + 1;
@@ -29,6 +29,23 @@
 #X obj 595 143 + 2500;
 #X obj 53 110 bng 15 250 50 0 empty go empty 17 7 0 10 -262144 -1 -1
 ;
+#X floatatom 891 388 6 0 0 0 - - -;
+#X obj 895 352 shell;
+#X floatatom 943 376 5 0 0 0 - - -;
+#X obj 944 403 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 896 331 date +%k%M%S;
+#X floatatom 632 369 6 0 0 0 - - -;
+#X obj 636 333 shell;
+#X floatatom 684 357 5 0 0 0 - - -;
+#X obj 685 384 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 637 312 date +%S;
+#X obj 629 419 % 10;
+#X obj 634 271 metro 1000;
+#X obj 641 210 loadbang;
+#X obj 636 521 hradio 15 1 0 8 fra nothing empty 0 -8 0 10 -262144
+-1 -1 7;
 #X connect 0 0 22 0;
 #X connect 1 0 8 0;
 #X connect 1 1 15 0;
@@ -62,5 +79,20 @@
 #X connect 23 0 24 0;
 #X connect 24 0 22 1;
 #X connect 25 0 22 0;
-#X restore 39 132 pd all;
+#X connect 27 0 26 0;
+#X connect 27 1 28 0;
+#X connect 28 0 29 0;
+#X connect 30 0 27 0;
+#X connect 31 0 36 0;
+#X connect 32 0 31 0;
+#X connect 32 1 33 0;
+#X connect 33 0 34 0;
+#X connect 35 0 32 0;
+#X connect 36 0 39 0;
+#X connect 37 0 35 0;
+#X connect 38 0 37 0;
+#X restore 190 135 pd all;
 #X obj 27 55 bng 25 250 50 0 go na go 17 7 0 10 -258113 -1 -1;
+#X floatatom 130 69 5 0 0 0 - - -;
+#X obj 89 202 hradio 15 1 0 8 na fra empty 0 -8 0 10 -262144 -1 -1
+7;
