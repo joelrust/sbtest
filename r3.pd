@@ -3,7 +3,7 @@
 #X obj 149 436 dac~;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array array1 8 float 3;
-#A 0 52 79 61 70 65 55 67 52;
+#A 0 54 54 59 79 56 54 77 78;
 #X coords 0 100 8 20 200 140 1 0 0;
 #X restore 587 153 graph;
 #X obj 178 218 catch~ allsum2;
@@ -3705,16 +3705,26 @@
 #X obj 725 366 random 30;
 #X obj 725 390 + 50;
 #X obj 770 323 metro 1000;
-#X obj 812 271 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 812 271 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 556 486 mod 8;
-#X obj 864 150 loadbang;
 #X obj 252 359 env~;
 #X floatatom 252 383 5 0 0 0 - - -;
 #X obj 138 284 *~ 1.5;
 #X obj 223 313 *~ 1.5;
-#X connect 0 0 27 0;
-#X connect 3 0 28 0;
+#X obj 129 65 bng 50 250 50 0 go empty empty 17 7 0 10 -130594 -20417
+-1;
+#X obj 815 163 bng 50 250 50 0 empty go empty 17 7 0 10 -130594 -4160
+-1;
+#X obj 896 262 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 889 305 metro 1;
+#X obj 913 200 loadbang;
+#X msg 913 224 1;
+#X obj 889 329 random 100;
+#X msg 855 239 0;
+#X connect 0 0 26 0;
+#X connect 3 0 27 0;
 #X connect 12 0 13 0;
 #X connect 12 0 23 0;
 #X connect 13 0 12 1;
@@ -3730,8 +3740,14 @@
 #X connect 21 0 19 0;
 #X connect 22 0 21 0;
 #X connect 23 0 15 0;
-#X connect 24 0 22 0;
-#X connect 25 0 26 0;
-#X connect 27 0 1 0;
-#X connect 28 0 1 1;
-#X connect 28 0 25 0;
+#X connect 24 0 25 0;
+#X connect 26 0 1 0;
+#X connect 27 0 1 1;
+#X connect 27 0 24 0;
+#X connect 29 0 22 0;
+#X connect 29 0 35 0;
+#X connect 30 0 31 0;
+#X connect 31 0 34 0;
+#X connect 32 0 33 0;
+#X connect 33 0 30 0;
+#X connect 35 0 30 0;
